@@ -18,17 +18,40 @@ function validateLength(params) {
 FunctionFactory.Instance.register("validateLength", validateLength);
 
 
-
 function SurveyComponent() {
     const survey = new Model(finalForm);
     survey.onComplete.add((sender, options) => {
-        console.log(JSON.stringify(sender.data, null, 3));
+      console.log(JSON.stringify(sender.data, null, 3));
+  
+      // Define the data you want to send to the backend
+      const postData = {
+        surveyData: sender.data,
+      };
+  
+      // Send a POST request to your backend
+      fetch('https://smartcity-ride.fly.dev/survey/complete', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(postData),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log('Survey data sent successfully', data);
+        })
+        .catch((error) => {
+          console.error('An error occurred while sending the survey data:', error);
+        });
     });
-
-    return (<Survey model={survey} />);
-}
-
-
+  
+    return <Survey model={survey} />;
+  }
 
 function App() {
     return SurveyComponent();
