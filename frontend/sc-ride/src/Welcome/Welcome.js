@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faSpinner, faCalculator } from '@fortawesome/free-solid-svg-icons'; // Import the specific icons you need
 
 const Welcome = ({ onStartSurvey }) => {
-  // const redirectToMaturityCalculation = () => {
-  //   window.location.href = 'https://smartcity-ride.fly.dev/maturidades/tabela';
-  // };
 
   const [loading, setLoading] = useState(false);
 
