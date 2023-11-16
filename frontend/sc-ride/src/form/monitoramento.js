@@ -38,6 +38,7 @@ export const mon_form =
                         {
                                 "type": "radiogroup",
                                 "name": "MON05",
+                                "isRequired": true,
                                 "description": "MON05 - De que forma as informações não sigilosas contidas no monitoramento são disponibilizadas?",
                                 "choices": ["MON05.a" ,"MON05.b" ,"MON05.c" ,"MON05.d", "MON05.e"]
                         }

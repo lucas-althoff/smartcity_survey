@@ -1,21 +1,78 @@
 export const dad_form =
-    {
+        {
         "name": "capacidade_dados",
         "title": "Capacidade: Dados",
         "elements":
-            [
+        [
                 {
-                        "type": "checkbox",
-                        "name": "DAD01",
-                        "title": "DAD01 - Em relação as seguintes áreas de atuação da prefeitura, assinale qual a forma de coleta e armazenamento de dados utilizada:",
-                        "colCount": 3,
-                        "choices": ["DAD01.aa", "DAD01.ab", "DAD01.ac", "DAD01.ba", "DAD01.bb", "DAD01.bc",
-                        "DAD01.ca", "DAD01.cb", "DAD01.cc", "DAD01.da", "DAD01.db", "DAD01.dc", "DAD01.ea",
-                        "DAD01.eb", "DAD01.ec", "DAD01.fa", "DAD01.fb", "DAD01.fc", "DAD01.ga", "DAD01.gb",
-                        "DAD01.gc", "DAD01.ha", "DAD01.hb", "DAD01.hc", "DAD01.ia", "DAD01.ib", "DAD01.ic",
-                        "DAD01.ja", "DAD01.jb", "DAD01.jc", "DAD01.ka", "DAD01.kb", "DAD01.kc", "DAD01.la",
-                        "DAD01.lb", "DAD01.lc", "DAD01.ma", "DAD01.mb", "DAD01.mc"]
+                "type": "matrix",
+                "name": "DAD01",
+                "title": "DAD01 - Em relação as seguintes áreas de atuação da prefeitura, assinale qual a forma de coleta e armazenamento de dados utilizada:",
+                "columns": [
+                        {
+                        "value": "a",
+                        "text": "Planilha eletrônica"
+                        }, {
+                        "value": "b",
+                        "text": "Banco de dados"
+                        }, {
+                        "value": "c",
+                        "text": "Nenhum/Não sabe"
+                        }],
+                "rows": [
+                        {
+                        "value": "DAD01.a",
+                        "text": "Assistência Social"
+                        },
+                        {
+                        "value": "DAD01.b",
+                        "text": "Cultura"
+                        },
+                        {
+                        "value": "DAD01.c",
+                        "text": "Desenvolvimento Econômico e Inovação"
+                        },
+                        {
+                        "value": "DAD01.d",
+                        "text": "Educação"
+                        },                        
+                        {
+                        "value": "DAD01.e",
+                        "text": "Gestão"
+                        },
+                        {
+                        "value": "DAD01.f",
+                        "text": "Meio Ambiente"
+                        },
+                        {
+                        "value": "DAD01.g",
+                        "text": "Obras e Infraestrutura"
+                        },
+                        {
+                        "value": "DAD01.h",
+                        "text": "Planejamento Urbano"
+                        },
+                        {
+                        "value": "DAD01.i",
+                        "text": "Saúde"
+                        },
+                        {
+                        "value": "DAD01.j",
+                        "text": "Segurança"
+                        },
+                        {
+                        "value": "DAD01.k",
+                        "text": "Transporte"
+                        },
+                        {
+                        "value": "DAD01.l",
+                        "text": "Turismo"
+                        }
+                ],
+                "alternateRows": true,
+                "isAllRowRequired": true
                 },
+
                 {
                         "type": "text",
                         "name": "DAD01.m",
@@ -70,5 +127,5 @@ export const dad_form =
                         "choices": ["DAD09.a", "DAD09.b", "DAD09.c", "DAD09.d", "DAD09.e"],
                         "visibleIf": "{DAD08} == 'DAD08.a'"
                 },
-            ]
-    }
+        ]
+        }

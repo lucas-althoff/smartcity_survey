@@ -4,25 +4,132 @@ export const serv_form =
         "title": "Capacidade: Serviços",
         "elements":
             [
+                // {
+                //     "type": "checkbox",
+                //         "name": "SERV01",
+                //         "title": "SERV01 - Indique na lista todas as áreas em que a Prefeitura oferece serviços às pessoas do município, bem como as modalidades em que são oferecidos:",
+                //         "colCount": 8,
+                //         "choices": ["SERV01.aa", "SERV01.ab", "SERV01.ac", "SERV01.ad", "SERV01.ae", "SERV01.af", "SERV01.ag", "SERV01.ah",
+                //             "SERV01.ba", "SERV01.bb", "SERV01.bc", "SERV01.bd", "SERV01.be", "SERV01.bf", "SERV01.bg", "SERV01.bh",
+                //             "SERV01.ca", "SERV01.cb", "SERV01.cc", "SERV01.cd", "SERV01.ce", "SERV01.cf", "SERV01.cg", "SERV01.ch",
+                //             "SERV01.da", "SERV01.db", "SERV01.dc", "SERV01.dd", "SERV01.de", "SERV01.df", "SERV01.dg", "SERV01.dh",
+                //             "SERV01.ea", "SERV01.eb", "SERV01.ec", "SERV01.ed", "SERV01.ee", "SERV01.ef", "SERV01.eg", "SERV01.eh",
+                //             "SERV01.fa", "SERV01.fb", "SERV01.fc", "SERV01.fd", "SERV01.fe", "SERV01.ff", "SERV01.fg", "SERV01.fh",
+                //             "SERV01.ga", "SERV01.gb", "SERV01.gc", "SERV01.gd", "SERV01.ge", "SERV01.gf", "SERV01.gg", "SERV01.gh",
+                //             "SERV01.ha", "SERV01.hb", "SERV01.hc", "SERV01.hd", "SERV01.he", "SERV01.hf", "SERV01.hg", "SERV01.hh",
+                //             "SERV01.ia", "SERV01.ib", "SERV01.ic", "SERV01.id", "SERV01.ie", "SERV01.if", "SERV01.ig", "SERV01.ih",
+                //             "SERV01.ja", "SERV01.jb", "SERV01.jc", "SERV01.jd", "SERV01.je", "SERV01.jf", "SERV01.jg", "SERV01.jh",
+                //             "SERV01.ka", "SERV01.kb", "SERV01.kc", "SERV01.kd", "SERV01.ke", "SERV01.kf", "SERV01.kg", "SERV01.kh",
+                //             "SERV01.la", "SERV01.lb", "SERV01.lc", "SERV01.ld", "SERV01.le", "SERV01.lf", "SERV01.lg", "SERV01.lh",
+                //             "SERV01.ma", "SERV01.mb", "SERV01.mc", "SERV01.md", "SERV01.me", "SERV01.mf", "SERV01.mg", "SERV01.mh"]
+                // },
                 {
-                    "type": "checkbox",
-                        "name": "SERV01",
-                        "title": "SERV01 - Indique na lista todas as áreas em que a Prefeitura oferece serviços às pessoas do município, bem como as modalidades em que são oferecidos:",
-                        "colCount": 8,
-                        "choices": ["SERV01.aa", "SERV01.ab", "SERV01.ac", "SERV01.ad", "SERV01.ae", "SERV01.af", "SERV01.ag", "SERV01.ah",
-                            "SERV01.ba", "SERV01.bb", "SERV01.bc", "SERV01.bd", "SERV01.be", "SERV01.bf", "SERV01.bg", "SERV01.bh",
-                            "SERV01.ca", "SERV01.cb", "SERV01.cc", "SERV01.cd", "SERV01.ce", "SERV01.cf", "SERV01.cg", "SERV01.ch",
-                            "SERV01.da", "SERV01.db", "SERV01.dc", "SERV01.dd", "SERV01.de", "SERV01.df", "SERV01.dg", "SERV01.dh",
-                            "SERV01.ea", "SERV01.eb", "SERV01.ec", "SERV01.ed", "SERV01.ee", "SERV01.ef", "SERV01.eg", "SERV01.eh",
-                            "SERV01.fa", "SERV01.fb", "SERV01.fc", "SERV01.fd", "SERV01.fe", "SERV01.ff", "SERV01.fg", "SERV01.fh",
-                            "SERV01.ga", "SERV01.gb", "SERV01.gc", "SERV01.gd", "SERV01.ge", "SERV01.gf", "SERV01.gg", "SERV01.gh",
-                            "SERV01.ha", "SERV01.hb", "SERV01.hc", "SERV01.hd", "SERV01.he", "SERV01.hf", "SERV01.hg", "SERV01.hh",
-                            "SERV01.ia", "SERV01.ib", "SERV01.ic", "SERV01.id", "SERV01.ie", "SERV01.if", "SERV01.ig", "SERV01.ih",
-                            "SERV01.ja", "SERV01.jb", "SERV01.jc", "SERV01.jd", "SERV01.je", "SERV01.jf", "SERV01.jg", "SERV01.jh",
-                            "SERV01.ka", "SERV01.kb", "SERV01.kc", "SERV01.kd", "SERV01.ke", "SERV01.kf", "SERV01.kg", "SERV01.kh",
-                            "SERV01.la", "SERV01.lb", "SERV01.lc", "SERV01.ld", "SERV01.le", "SERV01.lf", "SERV01.lg", "SERV01.lh",
-                            "SERV01.ma", "SERV01.mb", "SERV01.mc", "SERV01.md", "SERV01.me", "SERV01.mf", "SERV01.mg", "SERV01.mh"]
-                },
+                    "type": "matrixdropdown",
+                    "name": "SERV01",
+                    "title": "SERV01 - Indique na lista todas as áreas em que a Prefeitura oferece serviços às pessoas do município, bem como as modalidades em que são oferecidos:",
+                    "horizontalScroll": true,
+                    "columnMinWidth": "130px",
+                    "columns": [
+                      {
+                        "name": "Plataforma colaborativa",
+                        "title": "Plataforma colaborativa entre gestores municipais",
+                        "cellType": "checkbox",
+                        "choices": [ "a" ],
+                      },
+                      {
+                        "name": "Plataforma integrada",
+                        "title": "Plataforma integrada",
+                        "cellType": "checkbox",
+                        "choices": [ "b" ],
+                      },
+                      {
+                        "name": "Multicanais",
+                        "title": "Multicanais",
+                        "cellType": "checkbox",
+                        "choices": [ "c" ],
+                      },
+                      {
+                        "name": "Transacional",
+                        "title": "De forma transacional",
+                        "cellType": "checkbox",
+                        "choices": [ "d" ],
+                      },
+                      {
+                        "name": "Informacional",
+                        "title": "De forma informacional",
+                        "cellType": "checkbox",
+                        "choices": [ "e" ],
+                      },
+                      {
+                        "name": "Não Digitalizado - digitalização planejada",
+                        "title": "Não digitalizado - com digitalização planejada",
+                        "cellType": "checkbox",
+                        "choices": [ "f" ],
+                      },
+                      {
+                        "name": "Não digitalizado -digitalização sem previsão",
+                        "title": "Não digitalizado -digitalização sem previsão",
+                        "cellType": "checkbox",
+                        "choices": [ "g" ],
+                      },
+                      {
+                        "name": "Não sabe",
+                        "title": "Não sabe",
+                        "cellType": "checkbox",
+                        "choices": [ "h" ],
+                      },
+                    ],
+                    "rows": [
+                        {
+                        "value": "SERV01.a",
+                        "text": "Assistência Social"
+                        },
+                        {
+                        "value": "SERV01.b",
+                        "text": "Cultura"
+                        },
+                        {
+                        "value": "SERV01.c",
+                        "text": "Desenvolvimento Econômico e Inovação"
+                        },
+                        {
+                        "value": "SERV01.d",
+                        "text": "Educação"
+                        },                        
+                        {
+                        "value": "SERV01.e",
+                        "text": "Gestão"
+                        },
+                        {
+                        "value": "SERV01.f",
+                        "text": "Meio Ambiente"
+                        },
+                        {
+                        "value": "SERV01.g",
+                        "text": "Obras e Infraestrutura"
+                        },
+                        {
+                        "value": "SERV01.h",
+                        "text": "Planejamento Urbano"
+                        },
+                        {
+                        "value": "SERV01.i",
+                        "text": "Saúde"
+                        },
+                        {
+                        "value": "SERV01.j",
+                        "text": "Segurança"
+                        },
+                        {
+                        "value": "SERV01.k",
+                        "text": "Transporte"
+                        },
+                        {
+                        "value": "SERV01.l",
+                        "text": "Turismo"
+                        }
+                    ]
+                  },
                 {
                         "type": "text",
                         "name": "SERV01.m",
@@ -103,6 +210,7 @@ export const serv_form =
                 {
                     "type": "radiogroup",
                     "name": "SERV07",
+                    "isRequired": true,
                     "title": "SERV07 - A gestão municipal possui planos de ampliação da oferta de serviços para os moradores do município?",
                     "choices": ["SERV07.a", "SERV07.b", "SERV07.c"],
                 },

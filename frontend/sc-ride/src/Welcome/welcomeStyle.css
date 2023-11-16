@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, #542eb7 0%, #00acc1 100%);
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    fill: white;
+    margin-right: 15px;
+}
+
+.header-text {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the text horizontally */
+}
+
+.welcome-content {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.welcome-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add some space between the text and buttons */
+}
+
+button {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    background-color: #00acc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007c91;
+}
+
+.footer {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #aeaeae;
+    color: white;
+    text-emphasis-color: #ffff;
+}

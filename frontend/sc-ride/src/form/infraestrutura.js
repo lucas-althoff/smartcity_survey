@@ -96,13 +96,52 @@ export const inf_form =
                 "choices": ["INF01.4.a" ,"INF01.4.b" ,"INF01.4.c" ,"INF01.4.d" ,"INF01.4.e"]
             },
             {
-                "type": "checkbox",
+                "type": "matrix",
                 "name": "INF02",
                 "title": "INF02 - Considerando as seis funções de TI da administração municipal listadas abaixo, assinale quem é o responsável principal por desempenhar cada uma delas.",
-                "colCount": 3,
-                "choices": ["INF02.aa", "INF02.ab", "INF02.ac", "INF02.ba", "INF02.bb", "INF02.bc",
-                "INF02.ca", "INF02.cb", "INF02.cc", "INF02.da", "INF02.db", "INF02.dc", "INF02.ea",
-                "INF02.eb", "INF02.ec", "INF02.fa", "INF02.fb", "INF02.fc"]
+                "columns": [
+                        {
+                        "value": "a",
+                        "text": "Setor de TI próprio da prefeitura"
+                        }, {
+                        "value": "b",
+                        "text": "Organização pública de TI"
+                        }, {
+                        "value": "c",
+                        "text": "Empresas privadas terceirizadas"
+                        }],
+                "rows": [
+                        {
+                        "value": "INF02.a",
+                        "text": "Reparo e manutenção de equipamentos"
+                        },
+                        {
+                        "value": "INF02.b",
+                        "text": "Suporte técnico para sistema interno da prefeitura"
+                        },
+                        {
+                        "value": "INF02.c",
+                        "text": "Instalação e reparo da infraestrutura e redes"
+                        },
+                        {
+                        "value": "INF02.d",
+                        "text": "Desenvolvimento de website"
+                        },                        
+                        {
+                        "value": "INF02.e",
+                        "text": "Desenvolvimento de software"
+                        },
+                        {
+                        "value": "INF02.f",
+                        "text": "Escritório de projetos de TI"
+                        },
+                        {
+                        "value": "INF02.g",
+                        "text": "Nenhuma das atividades"
+                        }
+                ],
+                "alternateRows": true,
+                "isAllRowRequired": true
             },
             {
                 "type": "tagbox",
@@ -164,6 +203,7 @@ export const inf_form =
             {
                 "type": "radiogroup",
                 "name": "INF05.5",
+                "isRequired": true,
                 "description": "INF05.5 - O planejamento contempla a participação de outros atores no mercado de oferta de soluções tecnológicas?",
                 "choices": ["INF05.5.a", "INF05.5.b"],
                 "visibleIf": "{INF05} == 'INF05.a'"
