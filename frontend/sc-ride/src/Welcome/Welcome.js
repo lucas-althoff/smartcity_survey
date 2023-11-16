@@ -15,7 +15,7 @@ const Welcome = ({ onStartSurvey }) => {
   };
 
   const redirectToPage2 = () => {
-    window.open('https://inteligente.mcti.gov.br/sobre', '_blank');
+    window.open('https://www.gov.br/mdr/pt-br/assuntos/desenvolvimento-regional/projeto-andus/carta-brasileira-para-cidades-inteligentes', '_blank');
   };
 
   const redirectToPage3 = () => {
