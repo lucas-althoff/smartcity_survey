@@ -6,7 +6,7 @@ import { Survey } from 'survey-react-ui';
 import { finalForm } from '../form/builder';
 import "survey-core/i18n/portuguese-br";
 import 'survey-core/defaultV2.min.css';
-import { DoubleBorderLight } from "survey-core/themes/doubleborder-light";
+import { ThreeDimensionalLight } from "survey-core/themes/three-dimensional-light";
 
 function validateLength(params) {
   const valArray = params[0];
@@ -27,7 +27,7 @@ const SurveyComponent = () => {
 
   if (showSurvey) {
     const survey = new Model(finalForm);
-    survey.applyTheme(DoubleBorderLight);
+    survey.applyTheme(ThreeDimensionalLight);
     survey.locale = 'pt-br';
     survey.completeText = 'Finalizar questionário.';
     survey.showProgressBar = 'both';
