@@ -64,8 +64,8 @@ const Welcome = ({ onStartSurvey }) => {
           <h2> Sistema de Apoio à Pesquisa - SmartCity RIDE </h2>
           <p>
           A plataforma SmartCity RIDE tem como referência o modelo de Maturidade de Cidade Inteligente Sustentável MMCISB v2/2021.
-          Clique no botão abaixo para começar a responder ou para acessar o diagnóstio parcial de maturidade.
           </p>
+          <p>Clique no botão abaixo para começar a responder ou para acessar o diagnóstio parcial de maturidade.</p>
           <div className="button-container">
           <button onClick={onStartSurvey}><FontAwesomeIcon icon={faPlay} /> Iniciar Pesquisa</button>
             <button onClick={redirectToMaturityCalculation}>
