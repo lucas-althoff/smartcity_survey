@@ -56,7 +56,7 @@ export const inf_form =
             {
                 "type": "text",
                 "name": "INF3124",
-                "description": "INF3124 - Índice para cálculo do AQua: População do muncípio atendida com abastecimento de água tratada"
+                "description": "INF3124 - Tipos de serviços regulares de transporte de passageiros existentes no município"
             },
             {
                 "type": "text",
@@ -87,7 +87,7 @@ export const inf_form =
                 "type": "tagbox",
                 "name": "INF01.3",
                 "description": "INF01.3 - Informe o vínculo empregatício dos funcionários",
-                "choices": ["INF01.3.a", "INF01.3.b", "INF01.3.c", "INF01.3.c"]
+                "choices": ["INF01.3.a", "INF01.3.b", "INF01.3.c", "INF01.3.d", "INF01.3.e", "INF01.3.f"]
             },
             {
                 "type": "radiogroup",
@@ -134,10 +134,6 @@ export const inf_form =
                         {
                         "value": "INF02.f",
                         "text": "Escritório de projetos de TI"
-                        },
-                        {
-                        "value": "INF02.g",
-                        "text": "Nenhuma das atividades"
                         }
                 ],
                 "alternateRows": true,
@@ -179,7 +175,7 @@ export const inf_form =
                 "type": "radiogroup",
                 "name": "INF05.1",
                 "description": "INF05.1 - A prefeitura ainda não elaborou um plano, mas indique se realizou alguma das atividades:",
-                "choices": ["INF05.1.a", "INF05.1.b"],
+                "choices": ["INF05.1.a", "INF05.1.b", "INF05.1.c"],
                 "visibleIf": "{INF05} == 'INF05.b'"
             },
             {

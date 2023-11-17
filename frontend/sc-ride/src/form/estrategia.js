@@ -284,7 +284,7 @@ export const est_form =
                 {
                     "type": "tagbox",
                     "name": "EST07",
-                    "title": "EST07 - Quem é responsável pela formulação ou planejamento de ações de incorporação de tecnologias de informação e comunicação à gestão municipal?",
+                    "title": "EST07 - Quem é responsável pela governança das tecnologias de informação e comunicação incorporadas à gestão municipal?",
                     "isRequired": false,
                     "choices": [ "EST07.a", "EST07.b", "EST07.c", "EST07.d", "EST07.e", "EST07.f",
                         "EST07.g", "EST07.h", "EST07.i"]
