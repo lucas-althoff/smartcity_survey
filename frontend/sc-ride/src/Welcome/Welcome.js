@@ -38,7 +38,7 @@ const Welcome = ({ onStartSurvey }) => {
     <div className={`welcome-container ${isLateralBarOpen ? 'lateral-bar-open' : ''}`}>
       <div className="header">
         <div className="inner-header flex">
-          <div className="header-text">SmartCity - RIDE</div>
+          <div className="header-text">e-RIDE</div>
         </div>
         <button className="header-button" onClick={toggleLateralBar}>
             <FontAwesomeIcon icon={faBars} />
@@ -61,9 +61,9 @@ const Welcome = ({ onStartSurvey }) => {
       <div className="welcome-content flex">
         <div className="welcome-text">
           <img src={logo} alt="RIDE" className="logo" width="100" height="100" /> 
-          <h2> Sistema de Apoio à Pesquisa - SmartCity RIDE </h2>
+          <h2> Sistema de Apoio à Pesquisa - e-RIDE </h2>
           <p>
-          A plataforma SmartCity RIDE tem como referência o modelo de Maturidade de Cidade Inteligente Sustentável MMCISB v2/2021.
+          A plataforma e-RIDE tem como referência o modelo de Maturidade de Cidade Inteligente Sustentável MMCISB v2/2021.
           </p>
           <p>Clique em <b>Coletar Dados</b> para iniciar ou continuar o questionário do município.</p>
           <p>Clique em <b>Calcular Maturidade</b> para acessar o diagnóstio por município.</p>
@@ -76,7 +76,7 @@ const Welcome = ({ onStartSurvey }) => {
         </div>
       </div>
       <div className="footer">
-        <p> ®EXPORIDE 2023 - Ação 1. </p>
+        <p> ®EXPORIDE 2023 - Ação 1 </p>
       </div>
     </div>
   );
