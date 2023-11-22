@@ -183,6 +183,12 @@ export const serv_form =
                     "visibleIf": "{SERV05} == 'SERV05.a'"
                 },
                 {
+                  "type": "text",
+                  "name": "SERV05.1.e",
+                  "visibleIf": "({SERV05.1} contains 'SERV05.1.e')",
+                  "description": "SERV05.1.e - Qual outros canais de atendimento?"
+                },
+                {
                     "type": "text",
                         "name": "SERV05.1.e",
                         "title": "SERV05.1.e - Outros",
@@ -203,9 +209,9 @@ export const serv_form =
                 },
                 {
                     "type": "text",
-                        "name": "SERV06.1.g",
-                        "title": "SERV06.g - Outros",
-                    "visibleIf": "{SERV06.1} == 'SERV06.1.g'"
+                    "name": "SERV06.1.g",
+                    "title": "SERV06.g - Outras iniciativas de gestão integrada de informações na prefeitura",
+                    "visibleIf": "({SERV06.1} contains 'SERV06.1.g')",
                 },
                 {
                     "type": "radiogroup",

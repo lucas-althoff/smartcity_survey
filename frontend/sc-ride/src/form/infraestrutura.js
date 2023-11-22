@@ -72,16 +72,16 @@ export const inf_form =
             {
                 "type": "radiogroup",
                 "name": "INF01.1",
-                "description": "INF01.1 - A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
+                "description": "INF01.1 - A prefeitura não possui departamento, setor ou área de TI, porém, responda se, existe uma das condições a seguir.",
                 "visibleIf": "{INF01} != 'INF01.a'",
-                "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c"]
+                "choices": ["INF01.1.a", "INF01.1.b"]
             },
             {
                 "type": "radiogroup",
                 "name": "INF01.2",
-                "description": "INF01.2 - A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
+                "description": "INF01.2 - Informe o tamanho da equipe de funcionários efetivos de TI na prefeitura.",
                 "visibleIf": "{INF01} == 'INF01.a'",
-                "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c"]
+                "choices": ["INF01.2.a", "INF01.2.b", "INF01.2.c", "INF01.2.d"]
             },
             {
                 "type": "tagbox",
@@ -93,7 +93,7 @@ export const inf_form =
                 "type": "radiogroup",
                 "name": "INF01.4",
                 "description": "INF01.4 - Indique quais práticas de governança de TI são adotadas na prefeitura. Escolha apenas uma alternativa.",
-                "choices": ["INF01.4.a" ,"INF01.4.b" ,"INF01.4.c" ,"INF01.4.d" ,"INF01.4.e"]
+                "choices": ["INF01.4.a" ,"INF01.4.b" ,"INF01.4.c" ,"INF01.4.d"]
             },
             {
                 "type": "matrix",
@@ -149,6 +149,7 @@ export const inf_form =
             {
                 "type": "text",
                 "name": "INF03.l",
+                "visibleIf": "({INF03} contains 'INF03.l')",
                 "description": "INF03.l - Qual outro sistema de informação disponível na prefeitura?"
             },
             {

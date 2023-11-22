@@ -28,9 +28,9 @@ const Welcome = ({ onStartSurvey }) => {
   const redirectToMaturityCalculation = () => {
     setLoading(true);
     setTimeout(() => {
-      window.location.href = 'https://smartcity-ride.fly.dev/maturidades/tabela/';
+      window.open('https://smartcity-ride.fly.dev/maturidades/tabela/', '_blank');
       setLoading(false);
-    }, 2000); // Adjust the time according to your needs
+    }, 200); // Adjust the time according to your needs
   };
 
 
@@ -65,9 +65,10 @@ const Welcome = ({ onStartSurvey }) => {
           <p>
           A plataforma SmartCity RIDE tem como referência o modelo de Maturidade de Cidade Inteligente Sustentável MMCISB v2/2021.
           </p>
-          <p>Clique no botão abaixo para começar a responder ou para acessar o diagnóstio parcial de maturidade.</p>
+          <p>Clique em <b>Coletar Dados</b> para iniciar ou continuar o questionário do município.</p>
+          <p>Clique em <b>Calcular Maturidade</b> para acessar o diagnóstio por município.</p>
           <div className="button-container">
-          <button onClick={onStartSurvey}><FontAwesomeIcon icon={faPlay} /> Iniciar Pesquisa</button>
+          <button onClick={onStartSurvey}><FontAwesomeIcon icon={faPlay} /> Coletar Dados</button>
             <button onClick={redirectToMaturityCalculation}>
               {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : <FontAwesomeIcon icon={faCalculator} />} Calcular Maturidade
             </button>          
