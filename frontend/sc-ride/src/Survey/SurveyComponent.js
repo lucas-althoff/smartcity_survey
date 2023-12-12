@@ -6,7 +6,7 @@ import { Survey } from 'survey-react-ui';
 import { finalForm } from '../form/builder';
 import "survey-core/i18n/portuguese-br";
 import 'survey-core/defaultV2.min.css';
-import { ThreeDimensionalLight } from "survey-core/themes/three-dimensional-light";
+import { Tema } from "survey-core/themes/doubleborder-light";
 
 const storageItemKey = "my-survey";
 
@@ -35,7 +35,7 @@ const SurveyComponent = () => {
 
   if (showSurvey) {
     const survey = new Model(finalForm);
-    survey.applyTheme(ThreeDimensionalLight);
+    survey.applyTheme(Tema);
     survey.locale = 'pt-br';
     survey.completeText = 'Finalizar questionário.';
     survey.showProgressBar = 'both';
@@ -65,9 +65,26 @@ const SurveyComponent = () => {
           })
           .then((data) => {
             console.log('Survey data sent successfully', data);
+
+            // Check if the error response contains a validation error message
+            if (data.response && data.response.message === 'Erro') {
+              const errorMessage = data.response.content;
+              alert(`Erro de Validação: ${errorMessage}\nOs dados foram salvos na tabela survey-error.`);
+            } else {
+              // Handle other types of errors here
+              alert('An unexpected error occurred. Please try again later.');
+            }
           })
           .catch((error) => {
             console.error('An error occurred while sending the survey data:', error);
+            // Check if the error response contains a validation error message
+            if (error.response && error.response.message === 'Erro') {
+              const errorMessage = error.response.content;
+              alert(`Erro de Validação: ${errorMessage}\nOs dados foram salvos na tabela survey-error.`);
+            } else {
+              // Handle other types of errors here
+              alert('Ocorreu um erro inesperado. Por favor tente novamente.');
+            }
           });
     });
 
