@@ -218,7 +218,7 @@ export const serv_form =
                     "name": "SERV07",
                     "isRequired": true,
                     "title": "SERV07 - A gestão municipal possui planos de ampliação da oferta de serviços para os moradores do município?",
-                    "choices": ["SERV07.a", "SERV07.b", "SERV07.c"],
+                    "choices": ["SERV07.a", "SERV07.b", "SERV07.c", "SERV07.d"],
                 },
                 {
                     "type": "tagbox",

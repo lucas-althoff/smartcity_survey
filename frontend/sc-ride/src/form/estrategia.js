@@ -29,11 +29,11 @@ export const est_form =
                     "isRequired": false,
                     "choices": [ "EST02.a", "EST02.b", "EST02.c", "EST02.d", "EST02.e", "EST02.f",
                         "EST02.g", "EST02.h", "EST02.i", "EST02.j", "EST02.k", "EST02.l",  "EST02.m"],
-                    "validators": [{
-                        "type": "expression",
-                        "text": "A questão deve conter 5 respostas em ordem de importância",
-                        "expression": "validateLength({EST02}) == 5"
-                    }]
+                    // "validators": [{
+                    //     "type": "expression",
+                    //     "text": "A questão deve conter 5 respostas em ordem de importância",
+                    //     "expression": "validateLength({EST02}) == 5"
+                    // }]
                 },
                 {
                     "type": "text",

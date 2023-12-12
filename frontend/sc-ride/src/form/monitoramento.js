@@ -8,7 +8,7 @@ export const mon_form =
                                 "type": "radiogroup",
                                 "name": "MON01",
                                 "description": "MON01 - Assinale qual alternativa representa a situação da prefeitura em relação aos seus planos de monitoramento",
-                                "choices": ["MON01.a" ,"MON01.b" ,"MON01.c" ,"MON01.d" ,"MON01.e", "MON01.g"]
+                                "choices": ["MON01.a" ,"MON01.b" ,"MON01.c" ,"MON01.d" ,"MON01.e", "MON01.g", "MON01.h", "MON01.i"]
                         },
                         {
                                 "type": "tagbox",
@@ -33,7 +33,7 @@ export const mon_form =
                                 "type": "radiogroup",
                                 "name": "MON04",
                                 "description": "MON04 - De que forma as informações não sigilosas contidas no monitoramento são disponibilizadas?",
-                                "choices": ["MON04.a" ,"MON04.b" ,"MON04.c" ,"MON04.d"]
+                                "choices": ["MON04.a" ,"MON04.b" ,"MON04.c" ,"MON04.d", "MON04.e"]
                         },
                         {
                                 "type": "radiogroup",

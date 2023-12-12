@@ -38,7 +38,7 @@ export const json = {
                     "type": "tagbox",
                     "name": "EST02",
                     "title": "EST02 - Escolha 5 opções em ordem decrescente de importância",
-                    "isRequired": true,
+                    "isRequired": false,
                     "choices": [ "EST02.a", "EST02.b", "EST02.c", "EST02.d", "EST02.e", "EST02.f",
                         "EST02.g", "EST02.h", "EST02.i", "EST02.j", "EST02.k", "EST02.l",  "EST02.m"]
                 },
@@ -171,7 +171,7 @@ export const json = {
                 {
                     "type": "radiogroup",
                     "name": "EST08",
-                    "title": "EST08 - Em relação ao planejamento objeto da questão anterior, de incorporação de tecnologias da informação e comunicação na gestão municipal, como é feito seu acompanhamento?",
+                    "title": "EST08 - Quem é ou são as lideranças no processo de incorporação de tecnologias de informação e comunicação na gestão municipal atual?",
                     "isRequired": true,
                     "choices": [ "EST08.a", "EST08.b", "EST08.c", "EST08.d", "EST08.e", "EST08.f",
                         "EST08.g", "EST08.h", "EST08.i"],
@@ -191,91 +191,91 @@ export const json = {
                     "isRequired": true,
                     "choices": [ "EST09.a", "EST09.b", "EST09.c", "EST09.d", "EST09.e"]
                 }]
-        },
-        {
-            "name": "Capacidade: Infraestrutura",
-            "elements":
-            [
-                {
-                    "type": "text",
-                    "name": "INF4005",
-                    "description": "Índice para cálculo de IUPlan: Percentual de pavimentação das vias públicas"
-                 },
-                {
-                    "type": "radiogroup",
-                    "name": "INF4031",
-                    "description": "Índice para cálculo de IUPlan: Existem Ações de acessibilidade no transporte público do município",
-                    "choices": ["Sim", "Nao"]
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "INF4041",
-                    "description": "Índice para cálculo de IUPlan: Existem ações para políticas habitacionais do município",
-                    "choices": ["Sim", "Nao"]
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "INF4046",
-                    "description": "Índice para cálculo de IUPlan: Presença de ações de fomento a ciclo-mobilidade na cidade",
-                    "choices": ["Sim", "Nao"]
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "INF3122",
-                    "description": "Índice para cálculo de IUPlan: Presença de coleta seletiva de resíduos nos municípios",
-                    "choices": ["Sim", "Nao"]
-                },
-                {
-                    "type": "text",
-                    "name": "INF3027",
-                    "description": "Indice para calculo do AQua: Percentual da população coberta com coleta de resíduos (lixo orgânico e reciclável sem separação ou com separação)"
-                },
-                {
-                    "type": "text",
-                    "name": "INF3077",
-                    "description": "Índíce para cálculo do AQua: Número de equipamentos culturais disponíveis no município"
-                },
-                {
-                    "type": "text",
-                    "name": "INF3110",
-                    "description": "Índíce para cálculo do AQua: Índice de perdas de água na distribuição"
-                },
-                {
-                    "type": "text",
-                    "name": "INF3117",
-                    "description": "Índice para cálculo do AQua: População do muncípio atendida com abastecimento de água tratada"
-                },
-                {
-                    "type": "text",
-                    "name": "INF3124",
-                    "description": "Índice para cálculo do AQua: População do muncípio atendida com abastecimento de água tratada"
-                },
-                {
-                    "type": "text",
-                    "name": "INF3127",
-                    "description": "Índice para cálculo do AQua: Percentual da população residente em domicílios permanentes com esgotamento sanitário por rede geral e fossa séptica"
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "INF01",
-                    "description": "A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
-                    "choices": ["INF01.a", "INF01.b", "INF01.c"]
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "INF01.1",
-                    "description": "A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
-                    "visibleIf": "{INF01} == 'INF01.a'",
-                    "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c"]
-                },
-                {
-                    "type": "radiogroup",
-                    "name": "INF01.2",
-                    "description": "A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
-                    "visibleIf": "{INF01} == 'INF01.a'",
-                    "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c"]
-                },
-            ]
         }
+        // {
+        //     "name": "Capacidade: Infraestrutura",
+        //     "elements":
+        //     [
+        //         {
+        //             "type": "text",
+        //             "name": "INF4005",
+        //             "description": "Índice para cálculo de IUPlan: Percentual de pavimentação das vias públicas"
+        //          },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF4031",
+        //             "description": "Índice para cálculo de IUPlan: Existem Ações de acessibilidade no transporte público do município",
+        //             "choices": ["Sim", "Nao"]
+        //         },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF4041",
+        //             "description": "Índice para cálculo de IUPlan: Existem ações para políticas habitacionais do município",
+        //             "choices": ["Sim", "Nao"]
+        //         },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF4046",
+        //             "description": "Índice para cálculo de IUPlan: Presença de ações de fomento a ciclo-mobilidade na cidade",
+        //             "choices": ["Sim", "Nao"]
+        //         },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF3122",
+        //             "description": "Índice para cálculo de IUPlan: Presença de coleta seletiva de resíduos nos municípios",
+        //             "choices": ["Sim", "Nao"]
+        //         },
+        //         {
+        //             "type": "text",
+        //             "name": "INF3027",
+        //             "description": "Indice para calculo do AQua: Percentual da população coberta com coleta de resíduos (lixo orgânico e reciclável sem separação ou com separação)"
+        //         },
+        //         {
+        //             "type": "text",
+        //             "name": "INF3077",
+        //             "description": "Índíce para cálculo do AQua: Número de equipamentos culturais disponíveis no município"
+        //         },
+        //         {
+        //             "type": "text",
+        //             "name": "INF3110",
+        //             "description": "Índíce para cálculo do AQua: Índice de perdas de água na distribuição"
+        //         },
+        //         {
+        //             "type": "text",
+        //             "name": "INF3117",
+        //             "description": "Índice para cálculo do AQua: População do muncípio atendida com abastecimento de água tratada"
+        //         },
+        //         {
+        //             "type": "text",
+        //             "name": "INF3124",
+        //             "description": "Índice para cálculo do AQua: População do muncípio atendida com abastecimento de água tratada"
+        //         },
+        //         {
+        //             "type": "text",
+        //             "name": "INF3127",
+        //             "description": "Índice para cálculo do AQua: Percentual da população residente em domicílios permanentes com esgotamento sanitário por rede geral e fossa séptica"
+        //         },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF01",
+        //             "description": "A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
+        //             "choices": ["INF01.a", "INF01.b", "INF01.c"]
+        //         },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF01.1",
+        //             "description": "A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
+        //             "visibleIf": "{INF01} == 'INF01.a'",
+        //             "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c", "Nao possui"]
+        //         },
+        //         {
+        //             "type": "radiogroup",
+        //             "name": "INF01.2",
+        //             "description": "A prefeitura possui departamento, setor ou área responsável pela infraestrutura de TI no município?",
+        //             "visibleIf": "{INF01} == 'INF01.a'",
+        //             "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c", "Nao possui"]
+        //         },
+        //     ]
+        // }
     ]
 };

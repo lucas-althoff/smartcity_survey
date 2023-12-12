@@ -74,7 +74,7 @@ export const inf_form =
                 "name": "INF01.1",
                 "description": "INF01.1 - A prefeitura não possui departamento, setor ou área de TI, porém, responda se, existe uma das condições a seguir.",
                 "visibleIf": "{INF01} != 'INF01.a'",
-                "choices": ["INF01.1.a", "INF01.1.b"]
+                "choices": ["INF01.1.a", "INF01.1.b", "INF01.1.c"]
             },
             {
                 "type": "radiogroup",
@@ -93,7 +93,7 @@ export const inf_form =
                 "type": "radiogroup",
                 "name": "INF01.4",
                 "description": "INF01.4 - Indique quais práticas de governança de TI são adotadas na prefeitura. Escolha apenas uma alternativa.",
-                "choices": ["INF01.4.a" ,"INF01.4.b" ,"INF01.4.c" ,"INF01.4.d"]
+                "choices": ["INF01.4.a" ,"INF01.4.b" ,"INF01.4.c" ,"INF01.4.d", "INF01.4.e"]
             },
             {
                 "type": "matrix",
@@ -102,7 +102,7 @@ export const inf_form =
                 "columns": [
                         {
                         "value": "a",
-                        "text": "Setor de TI próprio da prefeitura"
+                        "text": "Funcionário ou área de TI da prefeitura"
                         }, {
                         "value": "b",
                         "text": "Organização pública de TI"
@@ -183,12 +183,13 @@ export const inf_form =
                 "type": "radiogroup",
                 "name": "INF05.2",
                 "description": "INF05.2 - A prefeitura já realizou pelo menos uma das ações previstas no documento formalmente constituído de planejamento de TI?",
-                "choices": ["INF05.2.a", "INF05.2.b"]
+                "choices": ["INF05.2.a", "INF05.2.b", "Inf 5.2.c"]
             },
             {
                 "type": "radiogroup",
                 "name": "INF05.3",
                 "description": "INF05.3 - A prefeitura monitora periodicamente o documento formalmente instituído de planejamento de Tecnologia da Informação?",
+                "visibleIf": "{INF05} == 'INF05.a'",
                 "choices": ["INF05.3.a", "INF05.3.b"]
             },
             {

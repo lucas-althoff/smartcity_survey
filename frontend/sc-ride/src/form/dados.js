@@ -18,6 +18,9 @@ export const dad_form =
                         }, {
                         "value": "c",
                         "text": "Nenhum/Não sabe"
+                        }, {
+                        "value": "d",
+                        "text": "Documentos Escaneados"
                         }],
                 "rows": [
                         {
@@ -100,7 +103,13 @@ export const dad_form =
                         "type": "radiogroup",
                         "name": "DAD05",
                         "title": "DAD05 - No que tange a Lei de Acesso à Informação, em qual situação o município se encontra?",
-                        "choices": ["DAD05.a", "DAD05.b", "DAD05.c", "DAD05.d"]
+                        "choices": ["DAD05.a", "DAD05.b", "DAD05.c", "DAD05.d", "DAD05.e"]
+                },
+                {
+                        "type": "radiogroup",
+                        "name": "DAD05.1",
+                        "title": "DAD05 - No que tange a Lei Geral de Proteção de Dados (LGPD), em qual situação o município se encontra?",
+                        "choices": ["DAD05.1.a", "DAD05.1.b", "DAD05.1.c", "DAD05.1.d", "DAD05.1.e"]
                 },
                 {
                         "type": "radiogroup",
