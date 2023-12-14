@@ -50,7 +50,7 @@ const SurveyComponent = () => {
         };
     
         // Send a POST request to your backend
-        fetch('https://smartcity-ride.fly.dev/survey/complete', {
+        fetch('https://e-ride.fly.dev/survey/complete', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

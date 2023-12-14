@@ -28,7 +28,7 @@ const Welcome = ({ onStartSurvey }) => {
   const redirectToMaturityCalculation = () => {
     setLoading(true);
     setTimeout(() => {
-      window.open('https://smartcity-ride.fly.dev/maturidades/tabela/', '_blank');
+      window.open('https://e-ride.fly.dev/maturidades/tabela/', '_blank');
       setLoading(false);
     }, 200); // Adjust the time according to your needs
   };
@@ -68,7 +68,9 @@ const Welcome = ({ onStartSurvey }) => {
           <p>Clique em <b>Coletar Dados</b> para iniciar ou continuar o questionário do município.</p>
           <p>Clique em <b>Calcular Maturidade</b> para acessar o diagnóstio por município.</p>
           <div className="button-container">
-          <button onClick={onStartSurvey}><FontAwesomeIcon icon={faPlay} /> Coletar Dados</button>
+          <button onClick={onStartSurvey}>
+            <FontAwesomeIcon icon={faPlay} /> Coletar Dados
+            </button>
             <button onClick={redirectToMaturityCalculation}>
               {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : <FontAwesomeIcon icon={faCalculator} />} Calcular Maturidade
             </button>          
