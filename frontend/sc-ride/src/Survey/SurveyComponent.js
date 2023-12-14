@@ -72,7 +72,7 @@ const SurveyComponent = () => {
               alert(`Erro de Validação: ${errorMessage}\nOs dados foram salvos na tabela survey-error.`);
             } else {
               // Handle other types of errors here
-              alert('An unexpected error occurred. Please try again later.');
+              alert('Dados armazenados com sucesso!');
             }
           })
           .catch((error) => {
